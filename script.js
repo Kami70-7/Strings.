@@ -38,3 +38,13 @@ function contaFrequencias(palavras){
   }
   return frequencias;
 }
+
+function tiraPalavrasRuins(palavras) {
+  const palavrasBoas = [];
+  for(let palavra of palavras){
+    if(palavra.lenght > 2){
+      palavrasBoas.push(palavra);
+    }
+  }
+  return palavrasBoas;
+}
