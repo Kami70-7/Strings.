@@ -40,9 +40,10 @@ function contaFrequencias(palavras){
 }
 
 function tiraPalavrasRuins(palavras) {
+  const PALAVRAS RUINS =  (["para", "uma", "nós"]);
   const palavrasBoas = [];
   for(let palavra of palavras){
-    if(palavra.lenght > 2){
+    if(!PALAVRAS RUINS.has(palavras) && palavra.lenght > 2){
       palavrasBoas.push(palavra);
     }
   }
